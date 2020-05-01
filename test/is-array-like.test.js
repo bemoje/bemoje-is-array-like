@@ -21,6 +21,7 @@ describe('is-array-like', function () {
 		expect(isArrayLike([])).toBe(true)
 
 		expect(isArrayLike([1, 2])).toBe(true)
+		expect(isArrayLike(new Uint16Array([1, 2]))).toBe(true)
 	})
 
 	test('isArrayLike(arguments)', function () {
